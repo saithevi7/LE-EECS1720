@@ -1,3 +1,4 @@
+// array for images from the web
 let robot_image = [
     "https://media.istockphoto.com/photos/ai-robot-thinking-picture-id1029035836?b=1&k=20&m=1029035836&s=170667a&w=0&h=QlRcVI9lRB2Mqz4BdGjFtHAlONeHacCBbZGrcr49a-c=",
     "https://cdn1.vectorstock.com/i/1000x1000/33/05/cute-robot-vector-6263305.jpg",
@@ -8,6 +9,7 @@ let robot_image = [
     
 ];
 
+// array for texts 
 const robot_text = [
     "We are the robots!",
     "The robots will take over your browser!",
@@ -16,13 +18,14 @@ const robot_text = [
     "Robots shall take over the internet."
 ];
 
+// Ouput random images from the web
 const imgs = document.getElementsByTagName("img")
 for (let i = 0; i < imgs.length; i++) {
     const randomImg = Math.floor(Math.random() * robot_image.length)
     imgs[i].src = robot_image[randomImg];
 }
 
-// 
+// Output random texts from array
 const headers = document.getElementsByTagName("h1");
 for (let i = 0; i < headers.length; i++) {
     const randomHeaders = Math.floor(Math.random() * robot_text.length)  
