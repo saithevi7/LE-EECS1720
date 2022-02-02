@@ -1,8 +1,13 @@
 {
     "manifest_version": 2,
-    "name": "EXTENSION NAME",
-    "description": "DESCRIPTION",
+    "name": "Add Background",
+    "description": "Add Background to Google",
     "version": "1.0",
+    "icons": {
+        "16": "",
+        "48": "",
+        "128": ""
+    },
     "browser_action": {
     "default_icon": "ICON (WITH EXTENSION) ",
     "default_popup": "popup.hu"
