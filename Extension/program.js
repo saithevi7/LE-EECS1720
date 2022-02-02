@@ -22,6 +22,7 @@ for (let i = 0; i < imgs.length; i++) {
     imgs[i].src = robot_image[randomImg];
 }
 
+// 
 const headers = document.getElementsByTagName("h1");
 for (let i = 0; i < headers.length; i++) {
     const randomHeaders = Math.floor(Math.random() * robot_text.length)  
