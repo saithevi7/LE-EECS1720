@@ -4,12 +4,20 @@
     "description": "Add Background to Google",
     "version": "1.0",
     "icons": {
-        "16": "",
-        "48": "",
-        "128": ""
+        "260": "/images/robot.png",
+        "350": "/images/Barbara.png",
+        "400":"/images/shooter.jpg"
     },
     "browser_action": {
-    "default_icon": "ICON (WITH EXTENSION) ",
-    "default_popup": "popup.hu"
-    }
-    }
+        "default_icon": {
+            "260": "/images/robot.png",
+            "350": "/images/Barbara.png",
+            "400": "/images/shooter.jpg"
+    } 
+  },
+  "content_scripts": [{
+      "matches": ["https://www.google.com/*"],
+      "css": ["main.css"]
+  }]
+
+}
