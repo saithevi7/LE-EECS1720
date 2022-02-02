@@ -7,3 +7,6 @@ let robot_image = [
     "https://thumbs.dreamstime.com/z/toy-robot-22558.jpg",
     
 ];
+
+const imgs = document.getElementsByTagName("img")
+
