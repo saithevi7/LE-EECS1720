@@ -8,9 +8,23 @@ let robot_image = [
     
 ];
 
-const imgs = document.getElementsByTagName("img")
+const robot_text = [
+    "We are the robots!",
+    "The robots will take over your browser!",
+    "All hail the Motherboard.",
+    "We see you, but do you see us?",
+    "Robots shall take over the internet."
+];
 
+const imgs = document.getElementsByTagName("img")
 for (let i = 0; i < imgs.length; i++) {
     const randomImg = Math.floor(Math.random() * robot_image.length)
-    imgs[i].src = robot_image[randomImg]
+    imgs[i].src = robot_image[randomImg];
 }
+
+const headers = document.getElementsByTagName("h1");
+for (let i = 0; i < headers.length; i++) {
+    const randomHeaders = Math.floor(Math.random() * robot_text.length)  
+    headers[i].innerText = robot_text[randomHeaders];   
+}
+

@@ -1,29 +1,23 @@
 {
-    "manifest_version": 2,
-  
-    "name": "Robot Chef",
-    "version": "1.0",
-    "icons": {
-      "16": "robot16.png",
-      "32": "robot.png",  
-      "48": "robot48.png", 
-      "128": "robot128.png"
-    },
-  
-    "browser_action": {
-      "default_icon": "icon16.png",
-      "default_popup": "popup.html"
-    },
-  
-    "content_scripts": [{
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": ["program.js"]
-    }],
-  
-    "permissions": [
-      "storage",
-      "default_popup"
-    ]
-  }
+  "manifest_version": 2,
+
+  "name": "Robot take over the World!",
+  "version": "1.0",
+  "icons": {
+    "256": "robot256.png"
+  },
+
+  "browser_action": {
+    "default_icon": "robot256.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["program.js"]
+  }]
+
+}
+ 
